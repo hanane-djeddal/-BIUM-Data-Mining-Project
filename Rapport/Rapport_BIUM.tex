@@ -1,0 +1,107 @@
+% pour genree un pdf: faire
+% pdflatex exemple.tex
+\documentclass{article}
+
+%% Paquets LateX utiles
+
+\usepackage[utf8]{inputenc} 		% encodage des caracteres utilise (pour les caracteres accentues) -- non utilise ici.
+%\usepackage[latin1]{inputenc} 		% autre encodage
+\usepackage[french]{babel}		% pour une mise en forme "francaise"
+\usepackage{amsmath,amssymb,amsthm}	% pour les maths
+\usepackage{graphicx}			% pour inclure des graphiques
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}			% pour ajouter des couleurs dans vos textes
+\usepackage{geometry}
+\geometry{hmargin=2.5cm,vmargin=3cm}
+\renewcommand{\contentsname}{\centering Contents}
+
+
+\begin{document}
+\begin{titlepage}
+    \begin{flushleft}
+    \includegraphics[width=11em]{logo.png}\\[1.5cm]
+    \end{flushleft}
+    %\begin{sffamily}
+    \begin{center}
+        \textsc{{\LARGE \color{blue} Master Données, Apprentissage et Connaissances-DAC}}\\[4cm]
+        \textsc{\Huge{RAPPORT PROJET BIUM}}\\[1cm]
+        \textsc{\Huge{Fidéliser les clients}}\\[5.5cm]
+        %\hspace{30pt}
+            % Author and supervisor
+        \begin{minipage}{1\textwidth}
+            \begin{flushleft} \large
+            \textsc{\LARGE{Realisé par :}}\\[0.5cm]
+            \textsc{Djeddal Hanane}\\
+            \textsc{Touzari Liticia}\\
+            \end{flushleft}
+        \end{minipage}
+        \vfill
+    \end{center}
+    %\end{sffamily}
+  \end{titlepage}
+  
+
+\tableofcontents					% si on veut une table des matieres
+
+
+\newpage
+
+
+\section{Introduction}
+\paragraph{}
+        Le Churn, qui designe le désabonnement des clients, est un problème très reccurent dans l'industrie.
+        Trouver des nouveaux clients étant plus difficile, surtous si le marché est saturé, comme
+        est le cas en télécommunication, plusieurs entreprises prefère investir dans 
+        la prévention de perte de clients.
+\paragraph{}
+        Plusieurs solutions existent pour prédire le churn qui
+        permettent de cibler les clients suspectible de se désabonner et de leur offrir, par la suite,
+        des abonnements plus intéressants pour les convaincre de prolonger leurs contracts. Une autre 
+        question se pose, est ce que c'est possible de prévenir les clients de vouloir se désabonner? 
+\paragraph{}        
+        Dans ce projet, on va utiliser le Data Mining sur un ensemble de bases de données des 
+        opérateurs téléphiniques pour etudier les profiles des clients pour pouvoir identifier les
+        facteurs clés de churn.
+\newpage
+
+\section{Présentation de la Problématique}
+\paragraph{}
+    Dans ce projet, on souhaite étudier les profiles des clients afin d'identifier les facteurs clés
+qui causent le Churn. Notre schéma doit nous permettre, donc, de répondre aux besoins suivants : \\
+1-Savoir les tranches d'age de l'ensemble des clients. \\
+2- Analyser : \\
+\begin{itemize}
+    -Le nombre des clients qui se désabonnent.\\
+    -Le nombre total de minutes par jour. \\
+    -Le nombre des appels par jour.\\
+    -Le nombre des sms par jour.\\
+    -Le nombre de message vocal par jour.\\
+    -Le nombre des appels le soir.\\
+    -Le nombre des sms le soir.\\
+    -Le nombre de message vocal le soir.\\
+    -Le nombre des appels au service client.\\
+    -La charge moyenne.\\
+\end{itemize}
+En fonction de :\\
+\begin{itemize}
+    -Sexe.\\ 
+    -Tranche d'age.\\
+    -État civil.\\
+    -Ancienneté.\\ 
+    -Type d'abonnement téléphonique.\\
+    -Profession \\
+    -Si le client a un ordinateur ou pas.\\ 
+\end{itemize}  
+On veut aussi analyser l'ancienneté des clients par sexe, tranche d'age, état civil, type 
+d'abonnement, profession et si le client a un oridinateur ou pas 
+
+
+
+}
+
+
+
+\end{document}
+
+
